@@ -618,8 +618,8 @@ footer {
 
 @media only screen and (max-width: 700px){
     
-      .container-project-alpha-big img {
-        max-width: 75%;
+     .container-project-alpha-big img {
+        max-width: 72%;
     }   
      /* TEXT */
      .text h2 {
