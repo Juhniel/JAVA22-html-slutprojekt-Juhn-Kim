@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="../index.html"><img src="../images/iconsLogos/jk.png" class="logo"></a>
+        <div class="toggle"></div>
+    </header>
+    <main>
+        <video src="../images/videos/Smoke_Light_08_blue.mp4" muted autoplay loop></video>
+        <!-- <div class="overlay"></div> En overlay på sidan om jag skulle behöva i framtiden-->
+
+
+        <!-- SHOWCASE TEXT -->
+        <div class="text">
+            <h2>Project - Beta</h2>
+            <h3>take a close look at project beta</h3>
+            <p></p>
+        </div>
+
+        <!-- PROJECT -->
+        <div class="container-project-alpha-big">
+            <div class="project-alpha-big">
+                <h1>Front Page</h1><a href="https://juhniel.github.io/JAVA22-htmlcss-mp1-Juhn-Kim/index.html"
+                    target="_blank"><img src="../images/projects/projectBeta/mp2-1.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="container-project-alpha">
+            <div class="project-alpha">
+                <h2>Menu Page</h2>
+                <img src="../images/projects/projectBeta/mp2-2.jpg" alt="">
+                <p>Information about what inspires me</p>
+            </div>
+            <div class="project-alpha">
+                <h2>Footer</h2>
+                <img src="../images/projects/projectBeta/mp2-3.jpg" alt="" class="project-beta-footer">
+                <p>Footer - contact information & opening hours.</p>
+            </div>
+            <div class="project-alpha">
+                <h2>Logo</h2>
+                <img src="../images/projects/projectBeta/mp2-4.jpg" alt="" class="project-beta-logo">
+                <p>Logo close up</p>
+            </div>   
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>design by Juhn Kim</p> 
+        </div>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/juhn.kim"><img src="../images/iconsLogos/facebookk.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/juhn-kim-7872a5251/"><img src="../images/iconsLogos/linkedin1.png" alt=""></a>
+            </li>
+            <li><a href="https://github.com/Juhniel"><img src="../images/iconsLogos/githubs.png" alt=""></a></li>
+        </ul>
+    </footer>
+
+    
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li class="projects-nav"><a href="./project-alpha.html"> Project Alpha</a></li>
+            <li class="projects-nav"><a href="./project-beta.html"> Project Beta</a></li>
+            <li class="projects-nav"><a href="./project-charlie.html">Project Charlie</a></li>
+            <li class="projects-nav"><a href="./project-delta.html">Project Delta</a></li>
+            <li><a href="./aboutme.html">About me</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MENU TOGGLE JS -->
+    <script>
+        const menuToggle = document.querySelector(".toggle")
+        const main = document.querySelector("main")
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active")
+            main.classList.toggle("active")
+        })
+    </script>
+</body>
+
+</html>

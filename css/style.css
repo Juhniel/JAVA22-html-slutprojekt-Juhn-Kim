@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* GENERAL DESIGN */
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 10px 50px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    background: rgb(37, 37, 37);
+    color: white;
+    height: 3000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+/* VIDEO + STYLING */
+
+main video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7cc2f5;
+    mix-blend-mode: overlay;
+}
+
+/* MENU */
+
+main.active {
+    right: 300px;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url("../images/iconsLogos/whitemenu.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url("../images/iconsLogos/close.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+
+nav ol li {
+    list-style: none;
+}
+
+
+nav ul li a:hover {
+    color: #4eb0f7;
+}
+
+/* NAV PROJECTS */
+
+.projects-nav:hover {
+    transform: scale(1.4);
+    transform-origin: left;
+    transition: transform .3s;
+}
+
+.projects-nav a {
+    font-size: 13px;
+}
+
+/* PROJECT GALLERY - INDEX */
+
+.project-h1 {
+    position: absolute;
+    margin: -150px;
+    font-size: 6em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.container-project {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    max-height: 500px;
+    bottom: 600px;
+}
+
+.project {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    transition: transform .2s;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.project:hover {
+    transform: scale(1.2);
+}
+
+.project button {
+    font-size: 1em;
+    background: transparent;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    border-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.project button:hover {
+    letter-spacing: 8px;
+}
+
+.project-text h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.project img {
+    max-width: 300px;
+    max-height: 200px
+}
+
+/* TEXT STYLING */
+
+.text {
+    position: relative;
+    z-index: 10;
+    bottom: 800px;
+
+
+}
+
+.text h2 {
+    font-size: 6em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h4 {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 8px;
+}
+
+/* ALL PROJECT PAGES */
+
+.container-project-alpha {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    bottom: 10%;
+    max-height: 300px;
+    text-align: center;
+}
+
+.container-project-alpha img {
+    max-width: 350px;
+    max-height: 300px;
+}
+
+.project-alpha {
+    margin: 0 20px;
+    transition: transform .2s;
+
+}
+
+.project-alpha:hover {
+    transform: scale(1.2);
+}
+
+.project-alpha h2 {
+    margin: 30px;
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.project-alpha p {
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.project-beta-logo {
+    height: 160px;
+}
+
+.project-beta-footer {
+    height: 167px
+}
+
+
+.container-project-alpha-big {
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-project-alpha-big img {
+    max-width: 1100px;
+    max-height: 600px;
+}
+
+.project-alpha-big h1 {
+    margin: 40px 0;
+    font-size: 6em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+/* ABOUT ME PAGE */
+
+.service-list li {
+    list-style: none;
+}
+
+.aboutme-selfie {
+    position: absolute;
+    left: 60%;
+    bottom: 62%
+}
+
+.aboutme-selfie img {
+    max-height: 450px;
+    border-radius: 50%;
+}
+
+/* CONTACT PAGE */
+
+form {
+    z-index: 10;
+    position: absolute;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 800px;
+    
+}
+
+#name {
+    min-width: 50%;
+}
+
+#email {
+    min-width: 50%;
+}
+
+.contact-form {
+    margin: 30px 0;
+}
+
+.contact-form p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: -5px 0px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    font-size: 15px;
+}
+
+.button-form {
+    padding: 10px 0;
+    color: white;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    margin-top: -25px;
+    padding: 0px;
+}
+
+.container-personal-contacts {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 1400px;
+}
+
+.personal-contacts {
+    margin: 0px 50px;
+}
+
+.personal-contacts img {
+    width: 50px;
+    filter: invert(1);
+}
+
+.personal-contacts p {
+    font-size: 25px;
+    font-weight: 500;   
+}
+
+/* FOOTER */
+
+footer {
+    z-index: 10;
+    background: transparent;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    color: white;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+/* SOCIAL ICONS - FOOTER */
+
+.socials {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials li {
+    list-style: none;
+}
+
+.socials li a {
+    display: flex;
+    margin-right: 20px;
+    filter: invert(1);
+}
+
+.socials img {
+    width: 50px;
+    height: 50px;
+}
+
+/* ------------------ MEDIA QUERIES ------------------*/
+
+/* 1410px */
+
+@media only screen and (max-width: 1440px) {
+
+    .container-project-alpha-big {
+        scale: 150%;
+        margin-bottom: 20%;
+    }
+
+    .container-project-alpha img {
+        max-width: 70%;
+
+    }
+
+    .container-project-alpha-big img {
+        max-width: 100%;
+    }
+
+    .container-project-alpha {
+        bottom: 500px;
+    }
+
+    .project-alpha h2 {
+        font-size: 2.4em;
+    }
+
+    .project-alpha p {
+        font-size: 1.1em;
+    }
+
+    .project-alpha-big h1 {
+        font-size: 3em;
+    }
+
+    .text {
+        margin: 100px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1149px) {
+
+    /* HEADER */
+    header {
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    /* TEXT */
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+
+    .text p {
+        font-size: 0.8em;
+    }
+
+    /* PROJECT GALLERY - INDEX */
+
+    .project-h1 {
+        font-size: 3em;
+    }
+
+    .container-project {
+        max-height: 800px;
+        max-width: 500px;
+        bottom: 800px;
+    }
+
+    .project {
+        margin: 10px;
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    .project button {
+        scale: 80%;
+    }
+
+    .project-text h3 {
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin-top: 12px;
+    }
+
+
+
+    /* ALL PROJECT PAGES */
+    .container-project-alpha-big {
+        scale: 90%;
+        margin-bottom: 20%;
+    }
+
+    .container-project-alpha img {
+        max-width: 70%;
+
+    }
+
+    .container-project-alpha-big img {
+        max-width: 100%;
+    }
+
+    .container-project-alpha {
+        bottom: 30%;
+    }
+
+    .project-alpha h2 {
+        font-size: 1.4em;
+    }
+
+    .project-alpha p {
+        font-size: 0.8em;
+    }
+
+    .project-alpha-big h1 {
+        font-size: 2.2em;
+    }
+
+    .text {
+        margin: 100px;
+    }
+
+    /* ABOUT ME */
+
+    .aboutme-selfie {
+        left: 33%;
+        bottom: 83%;
+
+    }
+
+    .aboutme-selfie img {
+        max-height: 250px;
+        max-width: 300px;
+        border-radius: 50%;
+    }
+    .personal-contacts p {
+        font-size: 20px;
+        font-weight: 500;   
+    }
+
+    form {
+        min-width: 50%;
+        
+    }
+}
+
+@media only screen and (max-width: 700px){
+     /* TEXT */
+     .text h2 {
+        font-size: 2.5em;
+    }
+
+    .text h3 {
+        font-size: 1.5em;
+    }
+
+    .text p {
+        font-size: 0.7em;
+    }
+
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+    .container-personal-contacts {
+        scale: 80%;
+    }
+
+    .footer-content p {
+        font-size: 80%;
+    }
+    
+}

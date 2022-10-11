@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="../index.html"><img src="../images/iconsLogos/jk.png" class="logo"></a>
+        <div class="toggle"></div>
+    </header>
+    <main>
+        <video src="../images/videos/Smoke_Light_08_purple.mp4" muted autoplay loop></video>
+        <!-- <div class="overlay"></div> En overlay på sidan om jag skulle behöva i framtiden-->
+
+
+        <!-- SHOWCASE TEXT -->
+        <div class="text">
+            <h2>Lets get in</h2>
+            <h2>touch</h2>
+        </div>
+
+
+        <!-- CONTACT FORM -->
+        <form>
+            <div class="contact-form">
+                <input type="text" id="name" required>
+                <label for="name">
+                    <p>Name</p>
+                </label>
+            </div>
+            <div class="contact-form">
+                <input type="email" id="email" required>
+                <label for="email">
+                    <p>Email</p>
+                </label>
+            </div>
+            <div class="contact-form">
+                <textarea id="message" cols="30" rows="10" required></textarea>
+                <label for="message">
+                    <p>Message</p>
+                </label>
+            </div>
+            <button type="submit" class="button-form">SUBMIT</button>
+        </form>
+        <div class="container-personal-contacts">
+            <div class="personal-contacts">
+                <img src="../images/iconsLogos/email.png" alt="">
+                <p>JuhnAndreasKim@gmail.com</p>
+            </div>
+            <div class="personal-contacts">
+                <img src="../images/iconsLogos/whatsappqr.png" alt="">
+                <p>WhatsApp</p>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>design by Juhn Kim</p> 
+        </div>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/juhn.kim"><img src="../images/iconsLogos/facebookk.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/juhn-kim-7872a5251/"><img src="../images/iconsLogos/linkedin1.png" alt=""></a>
+            </li>
+            <li><a href="https://github.com/Juhniel"><img src="../images/iconsLogos/githubs.png" alt=""></a></li>
+        </ul>
+    </footer>
+
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li class="projects-nav"><a href="./project-alpha.html"> Project Alpha</a></li>
+            <li class="projects-nav"><a href="./project-beta.html"> Project Beta</a></li>
+            <li class="projects-nav"><a href="./project-charlie.html">Project Charlie</a></li>
+            <li class="projects-nav"><a href="./project-delta.html">Project Delta</a></li>
+            <li><a href="./aboutme.html">About me</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MENU TOGGLE JS -->
+    <script>
+        const menuToggle = document.querySelector(".toggle")
+        const header = document.querySelector("main")
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active")
+            header.classList.toggle("active")
+        })
+    </script>
+</body>
+
+</html>

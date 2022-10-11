@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Juhn Kim's Portfolio</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="./images/iconsLogos/jk.png" class="logo">
+        <div class="toggle"></div>
+    </header>
+    <main>
+        <video src="./images/videos/Smoke_Light_08_red.mp4" muted autoplay loop playsinline></video>
+        <!-- <div class="overlay"></div> En overlay på sidan om jag skulle behöva i framtiden -->
+
+
+        <!-- SHOWCASE TEXT -->
+        <div class="text">
+            <h2>follow my journey</h2>
+            <h3>to becoming a programmer</h3>
+            <p>My name is Juhn Kim. I'm currently a student at Grit Academy Malmö, Sweden. I created this website to
+                showcase my portfolio.</p>
+            <a href="#">Download CV</a>
+        </div>
+
+
+        <!-- PROJECT SNEAKPEAK GALLERY-->
+        
+        <div class="container-project">
+            <h1 class="project-h1">Projects</h1>
+            <div class="project">
+                <a href="https://juhniel.github.io/JAVA22-htmlcss-mp1-Juhn-Kim/index.html" target="_blank">
+                    <img src="./images/projects/projectAlpha/mp1-1.jpg" alt=""></a>
+                <div class="project-text">
+                    <h3>Project Alpha</h3>
+                    <p>Project #1 at Grit Academy - 1st website created</p>
+                    <a href="./html/project-alpha.html"><button> Learn more</button></a>
+                </div>
+            </div>
+            <div class="project">
+                <a href="https://juhniel.github.io/JAVA22-html-mp2-Juhn-Kim/" target="_blank">
+                    <img src="./images/projects/projectBeta/mp2-1.jpg" alt=""></a>
+                <div class="project-text">
+                    <h3>Project Beta</h3>
+                    <p>Project #2 at Grit Academy - 2nd website created</p>
+                    <a href="./html/project-beta.html"><button>Learn more</button></a>
+                </div>
+            </div>
+            <div class="project">
+                <a href="./html/project-charlie.html">
+                    <img src="./images/projects/projectCharlie/maltese1.jpg" alt=""></a>
+                <div class="project-text">
+                    <h3>Project Charlie</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="./html/project-charlie.html"><button>Learn more</button></a>
+                </div>
+            </div>
+            <div class="project">
+                <a href="./html/project-delta.html">
+                    <img src="./images/projects/projectDelta/cat1.jpg" alt=""></a>
+                <div class="project-text">
+                    <h3>Project Delta</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="./html/project-delta.html"><button>Learn more</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>design by Juhn Kim</p>
+        </div>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/juhn.kim"><img src="./images/iconsLogos/facebookk.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/juhn-kim-7872a5251/"><img src="./images/iconsLogos/linkedin1.png" alt=""></a></li>
+            <li><a href="https://github.com/Juhniel"><img src="./images/iconsLogos/githubs.png" alt=""></a></li>
+        </ul>
+    </footer>
+
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./html/portfolio.html">Portfolio</a></li>
+            <li class="projects-nav"><a href="./html/project-alpha.html"> Project Alpha</a></li>
+            <li class="projects-nav"><a href="./html/project-beta.html"> Project Beta</a></li>
+            <li class="projects-nav"><a href="./html/project-charlie.html">Project Charlie</a></li>
+            <li class="projects-nav"><a href="./html/project-delta.html">Project Delta</a></li>
+            <li><a href="./html/aboutme.html">About me</a></li>
+            <li><a href="./html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MENU TOGGLE JS -->
+    <script>
+        const menuToggle = document.querySelector(".toggle")
+        const main = document.querySelector("main")
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active")
+            main.classList.toggle("active")
+        })
+    </script>
+</body>
+
+</html>

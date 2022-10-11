@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="../index.html"><img src="../images/iconsLogos/jk.png" class="logo"></a>
+        <div class="toggle"></div>
+    </header>
+    <main>
+        <video src="../images/videos/Smoke_Light_08_purple.mp4" muted autoplay loop></video>
+        <!-- <div class="overlay"></div> En overlay på sidan om jag skulle behöva i framtiden -->
+
+
+        <!-- SHOWCASE TEXT -->
+        <div class="text">
+            <h2>Project - Charlie</h2>
+            <h3>take a close look at project charlie</h3>
+            <p></p>
+        </div>
+
+        <!-- PROJECT -->
+        <div class="container-project-alpha-big">
+            <div class="project-alpha-big">
+                <h1>Maltese</h1><a href="https://juhniel.github.io/JAVA22-htmlcss-mp1-Juhn-Kim/index.html"
+                    target="_blank"><img src="../images/projects/projectCharlie/bigmaltese.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="container-project-alpha">
+            <div class="project-alpha">
+                <h2>Cute maltese</h2>
+                <img src="../images/projects/projectCharlie/maltese1.jpg" alt="">
+                <p>This maltese puppy is very handsome</p>
+            </div>
+            <div class="project-alpha">
+                <h2>Model maltese</h2>
+                <img src="../images/projects/projectCharlie/maltese2.jpg" alt="">
+                <p>This is Camila. She dreams about being a model.</p>
+            </div>
+            <div class="project-alpha">
+                <h2>Explorer maltese</h2>
+                <img src="../images/projects/projectCharlie/maltese3.jpg" alt="">
+                <p>This is "The pebble". She loves exploring in the garden.</p>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>design by Juhn Kim</p> 
+        </div>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/juhn.kim"><img src="../images/iconsLogos/linkedin1.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/juhn-kim-7872a5251/"><img src="../images/iconsLogos/linkedin1.png" alt=""></a>
+            </li>
+            <li><a href="https://github.com/Juhniel"><img src="../images/iconsLogos/githubs.png" alt=""></a></li>
+        </ul>
+    </footer>
+
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li class="projects-nav"><a href="./project-alpha.html"> Project Alpha</a></li>
+            <li class="projects-nav"><a href="./project-beta.html"> Project Beta</a></li>
+            <li class="projects-nav"><a href="./project-charlie.html">Project Charlie</a></li>
+            <li class="projects-nav"><a href="./project-delta.html">Project Delta</a></li>
+            <li><a href="./aboutme.html">About me</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MENU TOGGLE JS -->
+    <script>
+        const menuToggle = document.querySelector(".toggle")
+        const main = document.querySelector("main")
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active")
+            main.classList.toggle("active")
+        })
+    </script>
+</body>
+
+</html>
