@@ -188,8 +188,11 @@ nav ul li a:hover {
 }
 
 .project img {
-    max-width: 300px;
-    max-height: 200px
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    /* max-width: 300px;
+    max-height: 200px */
 }
 
 /* TEXT STYLING */
@@ -261,8 +264,9 @@ nav ul li a:hover {
 }
 
 .container-project-alpha img {
-    max-width: 350px;
-    max-height: 300px;
+    object-fit: scale-down;
+    width: 550px;
+    height: 300px;
 }
 
 .project-alpha {
@@ -308,8 +312,9 @@ nav ul li a:hover {
 }
 
 .container-project-alpha-big img {
-    max-width: 1100px;
-    max-height: 600px;
+    object-fit: cover;
+    width: 1100px;
+    height: 600px;
 }
 
 .project-alpha-big h1 {
@@ -368,8 +373,7 @@ form {
     margin: -5px 0px;
 }
 
-input,
-textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     outline: 0;
