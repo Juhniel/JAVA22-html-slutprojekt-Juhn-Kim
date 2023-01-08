@@ -28,27 +28,29 @@
 
 
         <!-- CONTACT FORM -->
-        <form>
+        <form action="https://formsubmit.co/5a3a7e6b3ec898d0395d3ee5cd940917" method="POST">
             <div class="contact-form">
-                <input type="text" id="name" required>
+                <input type="text" name="name"required>
                 <label for="name">
                     <p>Name</p>
                 </label>
             </div>
             <div class="contact-form">
-                <input type="email" id="email" required>
+                <input type="email" name="email" required>
                 <label for="email">
                     <p>Email</p>
                 </label>
             </div>
             <div class="contact-form">
-                <textarea id="message" cols="30" rows="10" required></textarea>
+                <textarea id="message" type="text" name="message" cols="30" rows="10" required></textarea>
                 <label for="message">
                     <p>Message</p>
                 </label>
             </div>
             <button type="submit" class="button-form">SUBMIT</button>
         </form>
+
+
         <div class="container-personal-contacts">
             <div class="personal-contacts">
                 <img src="../images/iconsLogos/email.png" alt="">
