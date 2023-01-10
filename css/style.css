@@ -201,8 +201,6 @@ nav ul li a:hover {
     position: relative;
     z-index: 10;
     bottom: 800px;
-
-
 }
 
 .text h2 {
@@ -503,6 +501,7 @@ footer {
     }
 
     .text {
+        bottom: 900px;
         margin: 100px;
     }
 
@@ -593,6 +592,7 @@ footer {
     }
 
     .text {
+        bottom: 1100px;
         margin: 100px;
     }
 
@@ -626,6 +626,9 @@ footer {
         max-width: 75%;
     }   
      /* TEXT */
+     .text {
+        bottom: 1060px;
+     }
      .text h2 {
         font-size: 2.5em;
     }
