@@ -200,7 +200,7 @@ nav ul li a:hover {
 .text {
     position: relative;
     z-index: 10;
-    bottom: 800px;
+    bottom: 900px;
 }
 
 .text h2 {
