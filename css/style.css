@@ -62,11 +62,13 @@ main video {
 /* MENU */
 
 main.active {
-    right: 300px;
+    z-index: 10;
 }
 
 .toggle {
-    position: relative;
+    position: fixed;
+    top: 40px;
+    right: 0;
     width: 60px;
     height: 60px;
     background: url("../images/iconsLogos/whitemenu.png");
@@ -84,26 +86,36 @@ main.active {
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 200px;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-
+    z-index: 2;
 }
 
 nav ul {
     position: relative;
     list-style: none;
+    
+}
+
+nav ul li {
+    margin: 20px;
+    
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 24px;
-    color: #111;
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: white;
+    
 }
 
 nav ol li {
@@ -123,8 +135,13 @@ nav ul li a:hover {
     transition: transform .3s;
 }
 
+.projects-nav {
+    z-index: 10;
+}
+
 .projects-nav a {
     font-size: 13px;
+    display: none;
 }
 
 /* PROJECT GALLERY - INDEX */
@@ -143,6 +160,7 @@ nav ul li a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    max-width: 1000px;
     max-height: 500px;
     bottom: 600px;
 }
@@ -465,6 +483,10 @@ footer {
 }
 
 /* ------------------ MEDIA QUERIES ------------------*/
+
+@media only screen and (max-width: 1440px) {
+
+}
 
 /* 1410px */
 
