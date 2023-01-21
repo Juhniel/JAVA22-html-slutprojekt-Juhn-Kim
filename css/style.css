@@ -13,10 +13,12 @@ header {
     position: absolute;
     width: 100%;
     padding: 10px 50px;
-    z-index: 999;
+    height: 10%;
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 main {
@@ -33,10 +35,10 @@ main {
 }
 
 
-
 .logo {
     width: 150px;
     height: 150px;
+    margin-top: 100px;
 }
 
 /* VIDEO + STYLING */
@@ -86,26 +88,26 @@ main.active {
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
+    position: absolute;
+    top: -1400px;
+    width: 80%;
     height: 100%;
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 999;
 }
 
 nav ul {
+    display: flex;
+    flex-direction: row;
     position: relative;
     list-style: none;
-    
+    z-index: 999;
 }
 
 nav ul li {
-    margin: 20px;
-    
+    margin: 70px;
 }
 
 nav ul li a {
@@ -114,8 +116,8 @@ nav ul li a {
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
-    color: white;
-    
+    color: white; 
+    z-index: 999;
 }
 
 nav ol li {
@@ -484,8 +486,11 @@ footer {
 
 /* ------------------ MEDIA QUERIES ------------------*/
 
-@media only screen and (max-width: 1440px) {
-
+@media only screen and (max-width: 1500px) {
+    nav ul li {
+        margin: 30px;
+        margin-top: 90px;
+    }
 }
 
 /* 1410px */
@@ -493,13 +498,9 @@ footer {
 @media only screen and (max-width: 1440px) {
 
     .container-project-alpha-big {
-        scale: 150%;
-        margin-bottom: 20%;
-    }
-
-    .container-project-alpha img {
-        max-width: 70%;
-
+        top: 43%;
+        width: 100%;
+        scale: 80%;
     }
 
     .container-project-alpha-big img {
@@ -507,7 +508,14 @@ footer {
     }
 
     .container-project-alpha {
-        bottom: 500px;
+        width: 100%;
+        bottom: 800px;
+    }
+
+    .project-alpha {
+        margin: 0px;
+        transition: transform .2s;
+    
     }
 
     .project-alpha h2 {
@@ -525,6 +533,21 @@ footer {
     .text {
         bottom: 900px;
         margin: 100px;
+    }
+
+    nav ul li {
+        margin: 20px;
+        margin-top: 90px;
+    }
+
+    .aboutme-selfie {
+        left: 55%;
+        bottom: 59%
+        
+    }
+
+    nav {
+       margin-left: 90px;
     }
 
 }
@@ -584,12 +607,14 @@ footer {
 
     /* ALL PROJECT PAGES */
     .container-project-alpha-big {
-        scale: 90%;
-        margin-bottom: 20%;
+        top: 30%;
+        border: 2px solid green;
+        width: 100%;
+        scale: 100%;
     }
 
     .container-project-alpha img {
-        max-width: 70%;
+        max-width: 100%;
 
     }
 
@@ -598,7 +623,7 @@ footer {
     }
 
     .container-project-alpha {
-        bottom: 30%;
+        bottom: 35%;
     }
 
     .project-alpha h2 {
@@ -620,17 +645,6 @@ footer {
 
     /* ABOUT ME */
 
-    .aboutme-selfie {
-        left: 33%;
-        bottom: 83%;
-
-    }
-
-    .aboutme-selfie img {
-        max-height: 250px;
-        max-width: 300px;
-        border-radius: 50%;
-    }
     .personal-contacts p {
         font-size: 20px;
         font-weight: 500;   
@@ -638,7 +652,25 @@ footer {
 
     form {
         min-width: 50%;
+    }
+
+    .aboutme-selfie {
+        left: 58%;
+        bottom: 72%
         
+    }
+
+    .aboutme-selfie img{
+        width: 75%;
+    }
+
+    nav {
+       margin-left: 90px;
+    }
+
+    nav ul li {
+        margin: 20px;
+        margin-top: 90px;
     }
 }
 
@@ -674,5 +706,47 @@ footer {
     .footer-content p {
         font-size: 80%;
     }
+
+    .aboutme-selfie {
+        left: 24%;
+        bottom: 69%
+    }
+
+    .aboutme-selfie img{
+        width: 70%;
+        border-radius: 20%;
+    }
+
+    nav {
+       margin-left: 10px;
+       display: flex;
+       
+       height: 100%;
+    }
+
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.4em;
+        font-weight: 800;
+        line-height: 1em;
+        text-transform: uppercase;
+        color: white; 
+        z-index: 999;
+        margin: -10px;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .text a {
+        font-size: 0.8em;
+    }
+
     
 }
