@@ -13,7 +13,7 @@ header {
     position: absolute;
     width: 100%;
     padding: 10px 50px;
-    height: 10%;
+    height: 5%;
     z-index: 20;
     display: flex;
     align-items: center;
@@ -718,9 +718,8 @@ footer {
     }
 
     nav {
-       margin-left: 10px;
        display: flex;
-       
+       margin-left: 10px;
        height: 100%;
     }
 
@@ -749,4 +748,53 @@ footer {
     }
 
     
+}
+
+@media only screen and (max-width: 482px){
+
+    nav {
+        display: flex;
+        flex-flow: row column;
+        width: 30%;
+        margin-left: 10px;
+        height: 100%;
+        border: 2px solid green;
+     }
+ 
+    nav ul li {
+         margin: 15px;
+         margin-top: 90px;
+         
+     }
+
+     nav ul li a {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 800;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .text a {
+        font-size: 0.8em;
+    } 
+
+    .container-personal-contacts {
+        border: 2px solid black;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 1400px;
+    }
+
+    .personal-contacts {
+        margin: 20px;
+    }
 }
