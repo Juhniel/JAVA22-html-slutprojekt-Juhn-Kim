@@ -758,7 +758,6 @@ footer {
         width: 30%;
         margin-left: 10px;
         height: 100%;
-        border: 2px solid green;
      }
  
     nav ul li {
@@ -786,7 +785,6 @@ footer {
     } 
 
     .container-personal-contacts {
-        border: 2px solid black;
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
